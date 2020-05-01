@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DifficultActivity">
+
+    <TextView
+        android:id="@+id/tvDifficult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty Level"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+
+
+        />
+    <RadioGroup
+
+        android:id="@+id/RGDifficultyLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvDifficult"
+        android:padding="30dp"
+        >
+
+        <RadioButton
+            android:id="@+id/RBEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textSize="40dp"
+            android:onClick="SelectDifficulty"
+            />
+        <RadioButton
+
+            android:id="@+id/RBNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:textSize="40dp"
+            android:onClick="SelectDifficulty"
+
+            />
+        <RadioButton
+            android:id="@+id/RBHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            android:textSize="40dp"
+            android:onClick="SelectDifficulty"
+
+            />
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btnSelectDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/RGDifficultyLevel"
+
+        />
+
+    <TextView
+        android:id="@+id/tvGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnSelectDifficulty"
+        android:layout_marginTop="25dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvBets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvGuess"
+        android:layout_marginTop="25dp"
+
+        />
+
+</RelativeLayout>
